@@ -1,0 +1,4 @@
+
+chef-solo -c /var/chef/solo.rb -j /var/chef/$1 
+
+

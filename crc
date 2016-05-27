@@ -1,0 +1,2 @@
+knife cookbook create $1
+

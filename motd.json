@@ -1,0 +1,5 @@
+{
+  "ext_var": "json variable",
+  "run_list": [ "recipe[motd]" ]
+
+}
