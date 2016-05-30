@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+begin
 ruby_block 'test_ruby' do
   block do
 
@@ -21,4 +22,15 @@ ruby_block 'test_ruby' do
 
   end
   action :run
+end
+end
+
+script 'runmyscript' do 
+  interpreter "bash"
+  code <<-EOH
+#     /bin/bash -x /tmp/test.sh
+  mkdir /tmp/test1
+  cp /tmp/output /tmp/test1/
+
+  EOH
 end
