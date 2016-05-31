@@ -7,6 +7,11 @@
 # All rights reserved - Do Not Redistribute
 #
 
+
+include_recipe "httpd::cookbookfile"
+include_recipe "httpd::test"
+
+
 package 'httpd' do
   version '2.4.6-40.el7.centos'
   action :install
